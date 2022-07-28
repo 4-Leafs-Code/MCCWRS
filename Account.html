@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Account</title>
+    <link
+      rel="icon"
+      href="../static/MCCWRS_Thumb.png"
+      type="image/png"
+    />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+          integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="../static/style.css">
+</head>
+<body>
+<div>{% include "navbar.html" %}</div>
+
+<div>
+    <h1>Welcome, {{ user.full_name }}!</h1>
+    <p>Here is all of your information.</p>
+    <p>Your User ID is: {{ user.id_num }} </p>
+    <p>Your username and password are: {{ user.username }} and  {{ user.password }} </p>
+    <p>Your administrative status is:
+        <br> Site Administrator: {{ user.site_administrator}}
+        <br> Facility Administrator: {{ user.facility_administrator}}</p>
+    <p>Your contact information is:
+        <br>{{user.email}}
+        <br>{{user.alt_email}}</p>
+</div>
+
+<!--Setting up User Accounts Page in Bootstrap-->
+
+<div class="container-fluid">
+    <nav class="nav nav-tabs" id="nav-tab" role="tablist">
+        <a class="nav-link active" id="nav-account-tab" data-bs-toggle="tab" href="#nav-account"
+           role="tab" aria-controls="nav-account" aria-selected="true">Account</a>
+
+        <a class="nav-link" id="nav-security-tab" data-bs-toggle="tab" href="#nav-security"
+           role="tab" aria-controls="nav-security" aria-selected="false">Security</a>
+
+        <a class="nav-link" id="nav-info-tab" data-bs-toggle="tab" href="#nav-info"
+           role="tab" aria-controls="nav-info" aria-selected="false">Info</a>
+    </nav>
+
+
+    <div class="tab-content" id="nav-tabContent">
+        <div class="tab-pane fade show active" id="nav-account" role="tabpanel" aria-labelledby="nav-account-tab">
+
+            <div class="container">
+                <div class="row">
+                    <div class="col-4">
+                        <img src="../static/beautiful_mind.jpg" alt="img-thumbnail" style="width:100px;" >
+                    </div>
+                    <div class="col-8">
+                        <button type="button" class="btn btn-info">Upload New Photo</button>
+                        <input type="file" accept=".jpeg, .png, .jpg, .gif" hidden="hidden">
+                        <p class="fs-6">Allowed: JPG, PNG, or GIF files</p>
+                    </div>
+                </div>
+            </div>
+            <br>
+            <div class="container">
+                <form>
+                    <div class="row-flex">
+                        <div class="col-md-6 col-12">
+                            <label for="formControlInput" class="form-label">User Name</label>
+                            <input type="email" class="form-control" id="formControlInput" placeholder="First.Last">
+                        </div>
+                        <div class="col-md-6 col-12">
+                            <label for="formControlInput" class="form-label">Name</label>
+                            <input type="email" class="form-control" id="formControlInput" placeholder="First Name">
+                        </div>
+                        <div class="col-md-6 col-12">
+
+                        </div>
+                        <div class="col-md-6 col-12">
+
+                        </div>
+                        <div class="col-md-6 col-12">
+
+                        </div>
+                        <div class="col-md-6 col-12">
+
+                        </div>
+                        <div class="col-md-6 col-12">
+
+                        </div>
+                        <div class="col-md-6 col-12"></div>
+                        <div class="col-md-6 col-12"></div>
+                        <div class="col-md-6 col-12"></div>
+                        <div class="col-md-6 col-12"></div>
+                    </div>
+                </form>
+            </div>
+        </div>
+
+
+
+        <div class="tab-pane fade" id="nav-security" role="tabpanel" aria-labelledby="nav-security-tab">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Magni, natus sed soluta necessitatibus tempore aspernatur? Praesentium, odit explicabo distinctio dolore adipisci officia iure, ut magnam optio aliquam at similique veritatis.</div>
+
+
+
+        <div class="tab-pane fade" id="nav-info" role="tabpanel" aria-labelledby="nav-info-tab">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Laudantium minima repellat incidunt facilis obcaecati blanditiis corrupti ad officia doloribus ullam sapiente ipsum, nemo a, excepturi voluptatem voluptatibus velit eum dignissimos ut, nam tempora? Reiciendis illo itaque veritatis eligendi fuga, mollitia ratione totam veniam esse in.</div>
+    </div>
+</div>
+
+
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"
+        integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p"
+        crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js"
+        integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF"
+        crossorigin="anonymous"></script>
+</body>
+
