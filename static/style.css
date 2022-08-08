@@ -2,9 +2,9 @@
     position: fixed;
     display: flex;
     flex-direction: row;
-    padding: 10px;
+    padding: 15px;
     background-color: #9cf6fb;
-    height: 40px;
+    height: 60px;
     width: 98%;
     z-index: 9;
 }

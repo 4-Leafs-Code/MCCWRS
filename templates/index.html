@@ -7,90 +7,124 @@
       rel="icon" href="../static/MCCWRS_Thumb.png" type="image/png"/>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
           integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
-    <link rel="stylesheet" type="text/css" href="../static/style.css">
 </head>
 
 <body>
-<div class="navigation-bar">
-    <div class="logo"><img src="../static/MCCWRS_LOGO.png" height="40px"></div>
-    <div class="buttons">
-        <a href="index.html" ><button>Home</button></a>
-        <a href="Account.html" ><button>Account</button></a>
-        <a href="logout.html"><button>Log out</button></a>
-        <a href="admin.html"><button>Admin</button></a>
+<!-- Navigation Bar -->
+    <div class="navbar navbar-expand-lg nav-pills row" style="background-color: #e3f2fd;">
+        <div class="col-3"><img src="../static/MCCWRS_LOGO.png" alt="Logo" height="60px" style="margin-left:30px"></div>
+        <div class="col-9 d-flex justify-content-end"
+            <ul class="" style="list-style-type: none;">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="#" role="button" aria-expanded="false">Dropdown</a>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="education.html">Education</a></li>
+                  <li><a class="dropdown-item" href="SMWRC.html">SMWRC</a></li>
+                  <li><a class="dropdown-item" href="Womens_Center.html">Womens Center</a></li>
+                  <li><hr class="dropdown-divider"></li>
+                  <li><a class="dropdown-item" href="News_Letter.html">News Letter</a></li>
+                </ul>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="logout.html">Logout</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link disabled" href="admin.html" tabindex="-1" aria-disabled="true">Disabled</a>
+              </li>
+            </ul>
+        </div>
     </div>
-</div>
-
+    <br>
 <!--    /* Page Title Block */-->
-<div class="home_page_title">
-  <img src="../static/phoenix.jpg" alt="Phoenix" style="width:85%;">
-  <div class="home_page_header">Maine Correctional Center Women Resident Services </div>
-</div>
+    <div class="mb-5">
+      <img src="../static/phoenix.jpg" alt="Phoenix" class="card-img rounded-pill img-fluid border border-5">
+    </div>
 <!--    /* College Information Block */-->
-<div class="container, college_block">
-    <div class="college_title">
-        <h2 class="header">Facility Educational Services</h2>
-        <p class="sub_header"> Click the facility You are intrested in attending to learn more about this programs offered </p>
+    <div class="container-xxl mb-5">
+        <div class="row">
+            <div class="col d-flex align-items-stretch">
+                <div class="card text-center">
+                    <h5 class="card-title ">Facility Educational Services</h5>
+                    <p class="card-text">Check out the educational section to see all of the classes and college courses you can compleate while you are a resident of MCC!</p>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card">
+                    <img src="../static/turtle.jpg" width="700" alt="Educational Photo">
+                    <div class="card-body">
+                        <a href="education.html" class="btn btn-primary">Educational Page</a>
+                    </div>
+                </div>
+            </div>
+        </div> 
     </div>
-    <div id="college_logos">
-        <div>
-            <h3 class="box_header"> UMA </h3>
-            <a href="education.html"><img src="../static/UMA_Logo.jpg" alt="UMA Logo"></a>
-        </div>
-        <div >
-            <h3 class="box_header"> WCCC</h3>
-            <a href="education.html"> <img src="../static/WCCC_Logo.jpg" alt="WCCC Logo"></a>
-        </div>
-        <div>
-            <h3 class="box_header"> WRS </h3>
-            <a href="education.html"><img src="../static/MCCWRS_Thumb.png" width="200" alt="WRS Logo"></a>
-        </div>
-        </div>
-</div>
-<!--/* Facility Informations Block*/-->
-<div class="facility_block">
-    <div class="facility_title">
-        <h2 class="header">Resident Facility Information</h2>
-        <p class="sub_header"> Please Click on your current housing facility for more information <br>spacificly pertaining
-            to that facility </p>
-    </div>
-    <div id="Facility">
-        <div>
-            <h3 class="box_header"> Womens Center </h3>
-            <a href="Womens_Center.html"><img src="../static/inner_journey.jpg" alt="WC Logo" height="200"></a>
-<!--            <p>enter text here</p>-->
-        </div>
-        <div>
-            <h3 class="box_header"> SMWRC </h3>
-            <a href="SMWRC.html"> <img src="../static/inner_self.jpg" alt="SMWRC Logo" height="200"></a>
-<!--            <p>enter text here</p>-->
+<!--    /*Facility Information Block  */-->
+    <div class="container-xxl mb-5">
+        <div class="row">
+            <div class="col">
+                <div class="card">
+                    <img src="../static/inner_self.jpg" alt="SMWRC Logo" width="700">
+                    <div class="card-body">
+                        <a href="SMWRC.html" class="btn btn-primary">Housing Information</a>
+                    </div>
+                </div>
+            </div>
+        
+            <div class="col d-flex align-items-stretch ">
+                <div class="card text-center">
+                    <h5 class="card-title ">Resident Facility Information</h5>
+                    <p class="card-text">Please Click on your current housing facility for more information spacificly pertaining to that facility </p>
+                </div>
+            </div>
         </div>
     </div>
-</div>
 
 <!--/* News Letter BLock*/-->
+    <div class="container-xxl mb-5">
+        <div class="row">
+            <div class="col d-flex align-items-stretch">
+                <div class="card text-center">
+                    <h5 class="card-title ">News Letter</h5>
+                    <p class="card-text">Check out the educational section to see all of the classes and college courses you can compleate while you are a resident of MCC!</p>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card">
+                    <img src="../static/beautiful_mind.jpg" width="500" alt="Beautiful Minds">
+                    <div class="card-body">
+                        <a href="News_Letter.html" class="btn btn-primary">News Letter</a>
+                    </div>
+                </div>
+            </div>
+        </div> 
+    </div>
 
 <!--Page Footer-->
-<footer>
+<footer class="border border-3">
     <div class="container-fluid">
         <div class="row">
             <div class="col-8">
+                <h6>This site was made for the Women of MCC</h6>
+                <p>It is made to share information about the classes and <br>degrees you can participate in while you serve your time.</p>
 
             </div>
             <div class="col-2">
                 <div class="btn-group-vertical" role="group" aria-label="Vertical button group">
-                    <a href="index.html" ><button type="button" class="btn btn-primary">Home</button></a>
-                    <a href="Account.html"><button type="button" class="btn btn-primary">Account</button></a>
-                    <a href="SMWRC.html"><button type="button" class="btn btn-primary">SMWRC</button></a>
-                    <a href="Womens_Center.html"><button type="button" class="btn btn-primary">Womens Center</button></a>
+                    <a href="index.html" ><button type="button" class="btn btn-primary btn-sm m-1">Home</button></a>
+                    <a href="Account.html"><button type="button" class="btn btn-primary btn-sm m-1">Account</button></a>
+                    <a href="SMWRC.html"><button type="button" class="btn btn-primary btn-sm m-1">SMWRC</button></a>
+                    <a href="Womens_Center.html"><button type="button" class="btn btn-primary btn-sm m-1">Womens Center</button></a>
                 </div>
             </div>
             <div class="col-2">
                 <div class="btn-group-vertical" role="group" aria-label="Vertical button group">
-                    <a href="education.html" ><button type="button" class="btn btn-primary">UMA</button></a>
-                    <a href="education.html" ><button type="button" class="btn btn-primary">WCCC</button></a>
-                    <a href="education.html"><button type="button" class="btn btn-primary">Facility Classes</button></a>
-                    <a href="News_Letter.html"><button type="button" class="btn btn-primary">News Letters</button></a>
+                    <a href="education.html" ><button type="button" class="btn btn-primary btn-sm m-1">UMA</button></a>
+                    <a href="education.html" ><button type="button" class="btn btn-primary btn-sm m-1">WCCC</button></a>
+                    <a href="education.html"><button type="button" class="btn btn-primary btn-sm m-1">Facility Classes</button></a>
+                    <a href="News_Letter.html"><button type="button" class="btn btn-primary btn-sm m-1">News Letters</button></a>
                 </div>
             </div>
         </div>
