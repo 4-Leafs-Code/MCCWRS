@@ -6,6 +6,7 @@
     <link rel="icon" href="../static/MCCWRS_Thumb.png" type="image/png"/>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
           integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <script type="text/javascript" src="../static/JavascriptFunctions.js"></script>
    
 </head>
 
@@ -16,35 +17,16 @@
   position: relative;
   height: 1200px;
   overflow: auto;
-}</style>
+}
+.scrollspy-example-3 {
+  position: relative;
+  height: 800px;
+  overflow: auto;
+}
+</style>
 
 	<!-- Navigation Bar -->
-    <div class="navbar navbar-expand-lg nav-pills row" style="background-color: #e3f2fd;">
-        <div class="col-3"><img src="../static/MCCWRS_LOGO.png" alt="Logo" height="60px" style="margin-left:30px"></div>
-        <div class="col-9 d-flex justify-content-end"
-            <ul class="" style="list-style-type: none;">
-              <li class="nav-item">
-                <a class="nav-link active" aria-current="page" href="index.html">Home</a>
-              </li>
-              <li class="nav-item dropdown">
-                <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="#" role="button" aria-expanded="false">Dropdown</a>
-                <ul class="dropdown-menu">
-                  <li><a class="dropdown-item" href="education.html">Education</a></li>
-                  <li><a class="dropdown-item" href="HousingUnit.html">SMWRC</a></li>
-                  <li><a class="dropdown-item" href="HousingUnit.html">Womens Center</a></li>
-                  <li><hr class="dropdown-divider"></li>
-                  <li><a class="dropdown-item" href="News_Letter.html">News Letter</a></li>
-                </ul>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="logout.html">Logout</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link disabled" href="admin.html" tabindex="-1" aria-disabled="true">Disabled</a>
-              </li>
-            </ul>
-        </div>
-    </div>
+    <script>MainNavBar();</script>
     <br>
     
     <div class="container mb-5">
@@ -71,56 +53,56 @@
                         <h2 class="page_subheader"> Approved Degrees and Cirtificates</h2>
                         <br>
                     </div>
-                    <div class="container" style="height:1200px">
+                    <div class="container">
                         <div class="row">
                             <div class="col-4">
 <!-- Nested Nav Bar -->
-                                <nav id="nested-navbar-scrollspy" class="navbar navbar-light bg-light flex-column">
+                                <nav id="nested-navbar-scrollspy" class="navbar navbar-light bg-light flex-column align-items-stretch p-3">
                                     <a class="navbar-brand" href="#">Degrees</a>
                                     <nav class="nav nav-pills flex-column">
                                         <a class="nav-link" href="#item-1">COMPUTER INFORMATION SYSTEMS</a>
                                         <nav class="nav nav-pills flex-column">
-                                            <a class="nav-link ml-3 my-1" href="#item-1-1">Bachelor Degree Requirements</a>
-                                            <a class="nav-link ml-3 my-1" href="#item-1-2">Associate Degree Requirements</a>
-                                            <a class="nav-link ml-3 my-1" href="#item-1-3">Certificates</a>
+                                            <a class="nav-link ms-3 my-1" href="#item-1-1">Bachelor Degree Requirements</a>
+                                            <a class="nav-link ms-3 my-1" href="#item-1-2">Associate Degree Requirements</a>
+                                            <a class="nav-link ms-3 my-1" href="#item-1-3">Certificates</a>
                                         </nav>
                                         <a class="nav-link" href="#item-2">INFORMATION & LIBRARY SCIENCE</a>
                                         <nav class="nav nav-pills flex-column">
-                                            <a class="nav-link ml-3 my-1" href="#item-2-1">Bachelor’s Degree Requirements</a>
-                                            <a class="nav-link ml-3 my-1" href="#item-2-2">Associate Degree Requirements</a>
-                                            <a class="nav-link ml-3 my-1" href="#item-2-3">ILS Certificate Program</a>
+                                            <a class="nav-link ms-3 my-1" href="#item-2-1">Bachelor’s Degree Requirements</a>
+                                            <a class="nav-link ms-3 my-1" href="#item-2-2">Associate Degree Requirements</a>
+                                            <a class="nav-link ms-3 my-1" href="#item-2-3">ILS Certificate Program</a>
                                         </nav>
                                         <a class="nav-link" href="#item-3">BUSINESS ADMINISTRATION</a>
                                         <nav class="nav nav-pills flex-column">
-                                            <a class="nav-link ml-3 my-1" href="#item-3-1">Accounting, BSBA: Bachelor Degree Requirements</a>
-                                            <a class="nav-link ml-3 my-1" href="#item-3-2">Management, BSBA: Bachelor Degree Requirements</a>
-                                            <a class="nav-link ml-3 my-1" href="#item-3-3">Business Administration, AS: Associate Degree Requirements</a>
-                                            <a class="nav-link ml-3 my-1" href="#item-3-4">Concentrations</a>
+                                            <a class="nav-link ms-3 my-1" href="#item-3-1">Accounting, BSBA: Bachelor Degree Requirements</a>
+                                            <a class="nav-link ms-3 my-1" href="#item-3-2">Management, BSBA: Bachelor Degree Requirements</a>
+                                            <a class="nav-link ms-3 my-1" href="#item-3-3">Business Administration, AS: Associate Degree Requirements</a>
+                                            <a class="nav-link ms-3 my-1" href="#item-3-4">Concentrations</a>
                                         </nav>
                                         <a class="nav-link" href="#item-4">JUSTICE STUDIES</a>
                                         <nav class="nav nav-pills flex-column">
-                                            <a class="nav-link ml-3 my-1" href="#item-4-1">Bachelor’s Degree Requirements</a>
-                                            <a class="nav-link ml-3 my-1" href="#item-4-2">Associate Degree Requirements</a>
-                                            <a class="nav-link ml-3 my-1" href="#item-4-3">Certificates</a>
+                                            <a class="nav-link ms-3 my-1" href="#item-4-1">Bachelor’s Degree Requirements</a>
+                                            <a class="nav-link ms-3 my-1" href="#item-4-2">Associate Degree Requirements</a>
+                                            <a class="nav-link ms-3 my-1" href="#item-4-3">Certificates</a>
                                         </nav>
                                         <a class="nav-link" href="#item-5">MENTAL HEALTH & HUMAN SERVICES</a>
                                         <nav class="nav nav-pills flex-column">
-                                            <a class="nav-link ml-3 my-1" href="#item-5-1">Bachelor’s Degree Requirements</a>
-                                            <a class="nav-link ml-3 my-1" href="#item-5-2">Associate Degree Requirements</a>
-                                            <a class="nav-link ml-3 my-1" href="#item-5-3">Concentrations & Certificates Offered</a>
+                                            <a class="nav-link ms-3 my-1" href="#item-5-1">Bachelor’s Degree Requirements</a>
+                                            <a class="nav-link ms-3 my-1" href="#item-5-2">Associate Degree Requirements</a>
+                                            <a class="nav-link ms-3 my-1" href="#item-5-3">Concentrations & Certificates Offered</a>
                                         </nav>
                                         <a class="nav-link" href="#item-6">LIBERAL STUDIES</a>
                                         <nav class="nav nav-pills flex-column">
-                                            <a class="nav-link ml-3 my-1" href="#item-6-1">Sample Curriculum</a>
-                                            <a class="nav-link ml-3 my-1" href="#item-6-2">Bachelor’s Degree Requirements</a>
-                                            <a class="nav-link ml-3 my-1" href="#item-6-3">Associate Degree Requirements</a>
+                                            <a class="nav-link ms-3 my-1" href="#item-6-1">Sample Curriculum</a>
+                                            <a class="nav-link ms-3 my-1" href="#item-6-2">Bachelor’s Degree Requirements</a>
+                                            <a class="nav-link ms-3 my-1" href="#item-6-3">Associate Degree Requirements</a>
                                         </nav>
                                     </nav>
                                 </nav>
                             </div>
                             <div class="col-8">
                         
-                                <div data-bs-spy="scroll" data-bs-target="#nested-navbar-scrollspy" data-bs-offset="0" tabindex="0" class="scrollspy-example-2 flex-column">
+                                <div data-bs-spy="scroll" data-bs-target="#nested-navbar-scrollspy" data-bs-offset="0" tabindex="0" class="scrollspy-example-2">
                                     <h4 id="item-1">COMPUTER INFORMATION SYSTEMS</h4>
                                         <h3 class="header">COMPUTER INFORMATION SYSTEMS</h3>
                                         <h4 class="sub_header"> We will engage & prepare you for your information-age career! </h4>
@@ -498,35 +480,36 @@
                     <div class="container">
                         <div class="row">
                             <div class="col-md-4">
-                         
-                                <nav id="nested-navbar-scrollspy" class="navbar navbar-light bg-light flex-column">
+                                <nav id="nested-navbar-scrollspy" class="navbar navbar-light bg-light flex-column align-items-stretch p-3">
                                     <a class="navbar-brand" href="#">Degrees</a>
+                                    <br>
                                     <nav class="nav nav-pills flex-column">
                                         <a class="nav-link" href="#item-1">Business Management</a>
                                         <nav class="nav nav-pills flex-column">
-                                            <a class="nav-link ml-3 my-1" href="#item-1-1">Small businesses</a>
-                                            <a class="nav-link ml-3 my-1" href="#item-1-2">Program Educational Outcomes</a>
-                                            <a class="nav-link" href="#item-2">Computer Technology</a>
+                                            <a class="nav-link ms-3 my-1" href="#item-1-1">Small businesses</a>
+                                            <a class="nav-link ms-3 my-1" href="#item-1-2">Program Educational Outcomes</a>
                                         </nav>
+                                        <br>
+                                        <a class="nav-link" href="#item-2">Computer Technology</a>
                                         <nav class="nav nav-pills flex-column">
-                                            <a class="nav-link ml-3 my-1" href="#item-2-1">Career Opportunities</a>
-                                            <a class="nav-link" href="#item-3">Production Technician</a>
+                                            <a class="nav-link ms-3 my-1" href="#item-2-1">Career Opportunities</a>
                                         </nav>
+                                        <br>
+                                        <a class="nav-link" href="#item-3">Production Technician</a>
                                         <nav class="nav nav-pills flex-column">
-                                            <a class="nav-link ml-3 my-1" href="#item-3-1">Program Educational Outcomes</a>
-                                            <a class="nav-link" href="#item-4">Human Services</a>
+                                            <a class="nav-link ms-3 my-1" href="#item-3-1">Program Educational Outcomes</a>
                                         </nav>
+                                        <br>
+                                        <a class="nav-link" href="#item-4">Human Services</a>
                                         <nav class="nav nav-pills flex-column">
-                                            <a class="nav-link ml-3 my-1" href="#item-4-1">Program Learning Outcomes</a>
+                                            <a class="nav-link ms-3 my-1" href="#item-4-1">Program Learning Outcomes</a>
                                         </nav>
                                     </nav>
                                 </nav>
                         
                             </div>
                             <div class="col-md-8">
-                        
-                            <!-- <div data-spy="scroll" data-target="#navbar-example3" data-offset="0" style="overflow-y: scroll; height: 100vh"> -->
-                                <div data-bs-spy="scroll" data-bs-target="#nested-navbar-scrollspy" data-bs-offset="0" tabindex="0" class="scrollspy-example-2">
+                                <div data-bs-spy="scroll" data-bs-target="#nested-navbar-scrollspy" data-bs-offset="0" tabindex="0" class="scrollspy-example-3">
                                     <h4 id="item-1">Business Management</h4>
                                         <h3 class="header">Business Management (Available Fully Online)</h3>
                                         <h4 class="sub_header"> Associate in Applied Science – 61 credit hours </h4>
@@ -649,33 +632,8 @@
 
 
 <!--Page Footer-->
-<footer class="border border-3">
-    <div class="container-fluid">
-        <div class="row">
-            <div class="col-8">
-                <h6>This site was made for the Women of MCC</h6>
-                <p>It is made to share information about the classes and <br>degrees you can participate in while you serve your time.</p>
+<script>FooterNav()</script>
 
-            </div>
-            <div class="col-2">
-                <div class="btn-group-vertical" role="group" aria-label="Vertical button group">
-                    <a href="index.html" ><button type="button" class="btn btn-primary btn-sm m-1">Home</button></a>
-                    <a href="Account.html"><button type="button" class="btn btn-primary btn-sm m-1">Account</button></a>
-                    <a href="HousingUnit.html"><button type="button" class="btn btn-primary btn-sm m-1">SMWRC</button></a>
-                    <a href="HousingUnit.html"><button type="button" class="btn btn-primary btn-sm m-1">Womens Center</button></a>
-                </div>
-            </div>
-            <div class="col-2">
-                <div class="btn-group-vertical" role="group" aria-label="Vertical button group">
-                    <a href="education.html" ><button type="button" class="btn btn-primary btn-sm m-1">UMA</button></a>
-                    <a href="education.html" ><button type="button" class="btn btn-primary btn-sm m-1">WCCC</button></a>
-                    <a href="education.html"><button type="button" class="btn btn-primary btn-sm m-1">Facility Classes</button></a>
-                    <a href="News_Letter.html"><button type="button" class="btn btn-primary btn-sm m-1">News Letters</button></a>
-                </div>
-            </div>
-        </div>
-    </div>
-</footer>
 <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"
         integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p"
         crossorigin="anonymous"></script>
