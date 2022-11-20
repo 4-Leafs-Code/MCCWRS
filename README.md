@@ -4,8 +4,8 @@
 ![Site Middle](https://github.com/4-Leafs-Code/IntroToWebDesignFP/blob/main/WD2.jpg)   
 ![Site Bottom](https://github.com/4-Leafs-Code/IntroToWebDesignFP/blob/main/WD3.jpg)   
    
-This was my Spring22 Into. to Web Design final project.     
-I updated the frunt end design of my Fall21 [Code Your Dreams final Project](https://github.com/4-Leafs-Code/CYD-Final-Project/).    
+This was my Summer22 Into. to Web Design final project.     
+I updated the frunt end design of my Spring22 [Code Your Dreams final Project](https://github.com/4-Leafs-Code/CYD-Final-Project/).    
 I wrote this site with HTML, CSS, BootStrap.     
     
 Major changes from the CYD final project:    
