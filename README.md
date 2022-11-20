@@ -1,4 +1,4 @@
-# Intro To Web Design Final Project   
+# Summer 2022 Intro To Web Design Final Project   
    
 ![Site Top](https://github.com/4-Leafs-Code/IntroToWebDesignFP/blob/main/WD1.jpg)   
 ![Site Middle](https://github.com/4-Leafs-Code/IntroToWebDesignFP/blob/main/WD2.jpg)   
