@@ -4,7 +4,7 @@ function MainNavBar() {
 	document.write(
 		'<div class="navbar navbar-expand-lg nav-pills row" style="background-color: #e3f2fd;">' +
 			'<div class="col-3">' +
-				'<img src="../static/MCCWRS_LOGO.png" alt="Logo" height="60px" style="margin-left:30px">' +
+				'<img src="./static/MCCWRS_LOGO.png" alt="Logo" height="60px" style="margin-left:30px">' +
 			'</div>' +
 			'<div class="col-9 d-flex justify-content-end" <ul style="list-style-type: none;">' +
 				'<li class="nav-item">' +
